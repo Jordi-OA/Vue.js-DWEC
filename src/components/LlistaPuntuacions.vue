@@ -1,20 +1,13 @@
 <template>
   <div>
     <ol>
-      <li>
-        {{ aplicacio.nom }} - puntuació
-        {{ this.$store.state.totalClicks }}
-      </li>
-      <li>APP - puntuació {{ this.$store.state.totalClicks }}</li>
-      <li>APP - puntuació {{ this.$store.state.totalClicks }}</li>
-      <li>APP - puntuació {{ this.$store.state.totalClicks }}</li>
-    </ol>
-    <div>
-      <Aplicacio
-        v-for="(item, index) in this.$store.state.aplicacions"
+      <Aplicacioinfo
+        v-for="(item, index) in this.$store.state.puntuacions"
         v-bind:key="index"
         v-bind:aplicacio="item"
-      />
+      ></Aplicacioinfo>
+    </ol>
+    <div>
       <ButtonCounter />
       <ButtonCounter />
     </div>
@@ -24,11 +17,11 @@
 
 <script>
 import ButtonCounter from "@/components/ButtonCounter";
-import Aplicacio from "@/components/Aplicacio";
+import Aplicacioinfo from "@/components/Aplicacioinfo";
 export default {
-  name: "Aplicacio",
+  name: "LlistaPuntuacions",
   props: ["aplicacio"],
-  components: { ButtonCounter, Aplicacio },
+  components: { ButtonCounter, Aplicacioinfo },
 };
 </script>
 
