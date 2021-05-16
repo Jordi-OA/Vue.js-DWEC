@@ -34,6 +34,7 @@ export default {
     },
     incrementar: function () {
       this.comptador++;
+      this.$store.commit("incrementa");
     },
     minvar: function () {
       this.comptadorneg--;
