@@ -1,18 +1,10 @@
 <template>
   <div>
     <ol>
-      <ul>
-        APP - puntuació
-      </ul>
-      <ul>
-        APP - puntuació
-      </ul>
-      <ul>
-        APP - puntuació
-      </ul>
-      <ul>
-        APP - puntuació
-      </ul>
+      <li>APP - puntuació</li>
+      <li>APP - puntuació</li>
+      <li>APP - puntuació</li>
+      <li>APP - puntuació</li>
     </ol>
   </div>
 </template>
