@@ -43,10 +43,15 @@ const store = new Vuex.Store({
     esborrar: function (state, aplicacio) {
       const index = state.aplicacions.indexOf(aplicacio);
       state.aplicacions.splice(index, 1);
+      state.puntuacions.splice(index, 1);
     },
     incrementa(state, aplicacio) {
       const index = state.aplicacions.indexOf(aplicacio);
       state.puntuacions[index].totalClicks++;
+    },
+    minva(state, aplicacio) {
+      const index = state.aplicacions.indexOf(aplicacio);
+      state.puntuacions[index].totalClicks--;
     }
   }
 });

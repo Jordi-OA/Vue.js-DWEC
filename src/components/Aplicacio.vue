@@ -38,6 +38,7 @@ export default {
     },
     minvar: function () {
       this.comptadorneg--;
+      this.$store.commit("minva", this.$props.aplicacio);
     },
   },
 };

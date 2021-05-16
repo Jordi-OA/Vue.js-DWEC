@@ -7,21 +7,17 @@
         v-bind:aplicacio="item"
       ></Aplicacioinfo>
     </ol>
-    <div>
-      <ButtonCounter />
-      <ButtonCounter />
-    </div>
+    <div></div>
   </div>
 </template>
 
 
 <script>
-import ButtonCounter from "@/components/ButtonCounter";
 import Aplicacioinfo from "@/components/Aplicacioinfo";
 export default {
   name: "LlistaPuntuacions",
   props: ["aplicacio"],
-  components: { ButtonCounter, Aplicacioinfo },
+  components: { Aplicacioinfo },
 };
 </script>
 

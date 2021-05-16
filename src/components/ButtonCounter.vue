@@ -1,5 +1,5 @@
 <template>
-  <button v-on:click="incrementar">M'has pitjat {{ comptador }} vegades</button>
+  <button v-on:click="incrementar">{{ comptador }} Punts</button>
 </template>
 <script>
 export default {
