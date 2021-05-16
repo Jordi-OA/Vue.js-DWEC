@@ -18,6 +18,17 @@ const store = new Vuex.Store({
         instalada: true
       }
     ],
+    puntuacions: [
+      {
+        nom: "Whatsapp",
+        puntuacio: "0"
+      },
+      { nom: "Minecraft", puntuacio: "0" },
+      {
+        nom: "Meet",
+        puntuacio: "0"
+      }
+    ],
     totalClicks: 0
   },
   mutations: {

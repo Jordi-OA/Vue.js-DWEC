@@ -1,19 +1,23 @@
 <template>
   <div>
-    <Aplicacio
-      v-for="(item, index) in this.$store.state.aplicacions"
-      v-bind:key="index"
-      v-bind:aplicacio="item"
-    ></Aplicacio>
+    <ol>
+      <ul>
+        APP - puntuació
+      </ul>
+      <ul>
+        APP - puntuació
+      </ul>
+      <ul>
+        APP - puntuació
+      </ul>
+      <ul>
+        APP - puntuació
+      </ul>
+    </ol>
   </div>
 </template>
 
 <script>
-import Aplicacio from "@/components/Aplicacio";
-export default {
-  name: "LlistaPuntuacions",
-  components: { Aplicacio },
-};
 </script>
 
 <style scoped>
