@@ -1,6 +1,10 @@
 <template>
   <div>
-    <li>{{ aplicacio.nom }} - Puntuació {{ this.$store.state.totalClicks }}</li>
+    <li>
+      {{ aplicacio.nom }} - Puntuació
+      {{ this.$store.state.puntuacions.totalClicks }}
+      {{ aplicacio.totalClicks }}
+    </li>
   </div>
 </template>
 

@@ -34,7 +34,7 @@ export default {
     },
     incrementar: function () {
       this.comptador++;
-      this.$store.commit("incrementa");
+      this.$store.commit("incrementa", this.$props.aplicacio);
     },
     minvar: function () {
       this.comptadorneg--;

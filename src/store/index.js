@@ -9,24 +9,28 @@ const store = new Vuex.Store({
       {
         nom: "Whatsapp",
         descripcio: "Una aplicació de missatgeria",
-        instalada: true
+        instalada: true,
+        totalClicks: 0
       },
-      { nom: "Minecraft", descripcio: "Joc", instalada: false },
+      { nom: "Minecraft", descripcio: "Joc", instalada: false, totalClicks: 0 },
       {
         nom: "Meet",
         descripcio: "Aplicació de videoconferències per la feina",
-        instalada: true
+        instalada: true,
+        totalClicks: 0
       }
     ],
     puntuacions: [
       {
         nom: "Whatsapp",
-        puntuacio: "0"
+        puntuacio: "0",
+        totalClicks: 0
       },
-      { nom: "Minecraft", puntuacio: "0" },
+      { nom: "Minecraft", puntuacio: "0", totalClicks: 0 },
       {
         nom: "Meet",
-        puntuacio: "0"
+        puntuacio: "0",
+        totalClicks: 0
       }
     ],
     totalClicks: 0
@@ -39,8 +43,9 @@ const store = new Vuex.Store({
       const index = state.aplicacions.indexOf(aplicacio);
       state.aplicacions.splice(index, 1);
     },
-    incrementa(state) {
-      state.totalClicks++;
+    incrementa(state, aplicacio) {
+      const index = state.aplicacions.indexOf(aplicacio);
+      state.puntuacions[index].totalClicks++;
     }
   }
 });
