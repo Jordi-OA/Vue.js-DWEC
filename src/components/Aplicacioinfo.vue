@@ -2,7 +2,6 @@
   <div>
     <li>
       {{ aplicacio.nom }} - Puntuació
-      {{ this.$store.state.puntuacions.totalClicks }}
       {{ aplicacio.totalClicks }}
     </li>
   </div>

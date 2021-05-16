@@ -38,6 +38,7 @@ const store = new Vuex.Store({
   mutations: {
     afegir: function (state, aplicacio) {
       state.aplicacions.push(aplicacio);
+      state.puntuacions.push(aplicacio);
     },
     esborrar: function (state, aplicacio) {
       const index = state.aplicacions.indexOf(aplicacio);
